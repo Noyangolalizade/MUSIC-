@@ -1,4 +1,3 @@
 # MUSIC-
-free to be a pianist.
 فارسی : این برنامه یک برنامه رایگان است برای این که شما بتوانید سنتور و پیانو بزنید ما در حال آماده سازی سنتور هستیم و این نسخه ای بتا از برنامه است.
 لینک نظرسنجی برنامه : https://docs.google.com/forms/d/1k_8-Jjv1hxAN4qs2x7mivrYQzTRWc_XUMK0G-Cx0YrA
