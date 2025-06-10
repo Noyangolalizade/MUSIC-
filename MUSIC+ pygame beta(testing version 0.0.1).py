@@ -64,6 +64,10 @@ event3= pygame.image.load('eftkhr.png')
 
 event3 = pygame.transform.scale(event3,(event3.get_height()//0.5,event3.get_width()//1.5))
 
+download = pygame.image.load("download.jpg")
+
+download = pygame.transform.scale(download,(download.get_height()//16,download.get_width()//18))
+
 sampadx = 870
 sampady = 468
 
@@ -94,11 +98,14 @@ chromy4 = 230
 eventx = 695
 eventy = 435
 
-eventx2 = 747
+eventx2 = 670
 eventy2 = 24.5
 
 event3x = -220
 event3y = -70
+
+downloadx = 750
+downloady = 16.5
 
 github_rect = github.get_rect(topleft=(githubx, githuby))
 
@@ -110,6 +117,8 @@ chrome_rect = chrome2.get_rect(topleft=(chromx2,chromy2))
 
 eft_rect = event2.get_rect(topleft=(eventx2,eventy2))
 
+download_rect = download.get_rect(topleft=(downloadx,downloady))
+
 def somethings():
     screen.blit(sampadlogo1,(sampadx,sampady))
     screen.blit(tutorial_keys,(tkeysx,tkeysy))
@@ -120,6 +129,7 @@ def somethings():
     screen.blit(chrome3,(chromx3,chromy3))
     screen.blit(event,(eventx,eventy))
     screen.blit(event2,(eventx2,eventy2))
+    screen.blit(download,(downloadx,downloady))
     pygame.draw.rect(screen, "black", (0, 50, 20, 147))
  
 def texts():
@@ -255,11 +265,13 @@ while running:
             running = False
         elif event.type == pygame.MOUSEBUTTONDOWN:
             if github_rect.collidepoint(event.pos):
-                webbrowser.open("https://github.com/Nikannejatifar/musicc") 
+                webbrowser.open("https://github.com/Noyangolalizade/MUSIC-") 
             if chat_rect.collidepoint(event.pos):
                 webbrowser.open("musicc.nikan.noyan@gmail.com") 
             if sampad_rect.collidepoint(event.pos):
                 webbrowser.open("https://sampad.gov.ir")
+            if download_rect.collidepoint(event.pos):
+                webbrowser.open("https://github.com/Noyangolalizade/MUSIC-/archive/refs/heads/main.zip")
             if chrome_rect.collidepoint(event.pos):
                 webbrowser.open("https://docs.google.com/forms/d/1k_8-Jjv1hxAN4qs2x7mivrYQzTRWc_XUMK0G-Cx0YrA")  
                 show_image = True
@@ -277,3 +289,4 @@ while running:
 
     
     pygame.display.update()
+
