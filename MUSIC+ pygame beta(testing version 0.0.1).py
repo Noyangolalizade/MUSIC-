@@ -24,10 +24,6 @@ chat = pygame.image.load('chat.jpg')
 
 chat = pygame.transform.scale(chat,(chat.get_height()//5.7,chat.get_width()//6.2))
 
-about = pygame.image.load('about.jpg')
-
-about = pygame.transform.scale(about,(about.get_height()//3.5,about.get_width()//3))
-
 test = pygame.image.load('test.png')
 
 test = pygame.transform.scale(test,(test.get_height()//0.5,test.get_width()//3))
